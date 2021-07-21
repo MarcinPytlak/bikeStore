@@ -1,0 +1,58 @@
+@import '../../../styles/settings.scss';
+
+.root {
+
+    .sumTotal {
+        border: 1px dotted cornflowerblue;
+    }
+    .orderTitle {
+        margin: 0;
+
+        h2 {
+            margin: 15px 0 ;
+            font-family: Trattatello, fantasy;
+        }
+    }
+
+    .orderProduct {
+        margin: 10px 0;
+        align-items: center;
+        box-shadow: 1px 1px 2px black, 0 0 8px blue, 0 0 5px darkblue;;
+        
+
+        .orderPicture img {
+            height: 200px;
+            width: 250px;
+            left: 0;
+        }
+
+        .orderPieces {
+            text-align: center;
+        }
+
+        .orderPrice {
+            text-align: center;
+        }
+    }
+
+    .sumTotal {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+
+        span {
+            font-weight: 800;
+            color: $blue-font;
+        }
+    }
+
+    .emptyBracket {
+        height: 100vh;
+        text-align: center;
+    }
+
+    form {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}

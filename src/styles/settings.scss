@@ -1,0 +1,60 @@
+
+$light-grey-quaternary: rgb(224, 227, 237);
+$light-grey-5th: rgb(169, 169, 169);
+$base-size: 12px;
+$dark-grey: #363636;
+$black-primary: #2a2a2a;
+$black-secondary: #292929;
+$black-tertiary: rgb(42, 42, 42);
+$black-transparent: rgba(42, 42, 42, 0.5);
+$orange: #d58e32;
+$white-primary: #ffffff;
+$white-secondary: #e1e1e1;
+$white-tertiary: #f4f5f7;
+$white-quaternary: #e2e2e2;
+$blue-sad: #054F7C;
+$blue-font: #18046C;
+
+
+//VARIABLES FOR MODULES
+
+$header-topbar-bg: $black-primary;
+$header-bg: $blue-sad;
+$footer-claim-bg: $black-primary;
+$footer-bg: $dark-grey;
+$primary: $orange;
+$font:$blue-font;
+$background-transparent: $black-transparent;
+$global-border-color: $white-quaternary;
+$content-color: $black-tertiary;
+$color-light-primary: $white-primary;
+$text-color: $black-primary;
+$cardcounter-color: $light-grey-quaternary;
+
+%buttons-hover-before {
+  background-image: linear-gradient(45deg, $primary 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: 250ms ease-in-out, color 250ms ease-in-out;
+  color: $primary;
+};
+
+%buttons-hover-after {
+  background-position: 0;
+  color: $color-light-primary;
+};
+
+%text-hover-before {
+  background-image: linear-gradient(to bottom, transparent 50%);
+  background-position: 0% 0%;
+  background-size: 400%;
+  transition: 250ms ease-in-out, color 250ms ease-in-out;
+  color: $primary;
+};
+
+%text-hover-after {
+  background-position: 0% 100%;
+  color: $primary;
+};
+//TRANSITION
+$transition: 0.6s;

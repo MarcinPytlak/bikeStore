@@ -1,0 +1,71 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    background-color: $cardcounter-color;
+    width: 40rem;
+    height: auto;
+
+    .bracketPhoto {
+        width: 60px;
+
+        img {
+            height: 75px;
+            width: 80%;
+        }
+    }
+
+    .productBracket {
+        margin: 10px 5px;
+
+        .order {
+            margin: 10px;
+        }
+
+        .additionalText {
+            width: 30rem;
+        }
+    }
+
+    .buttonOrder a {
+        color: $color-light-primary;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 568px){
+    .root {
+        width: 470px;
+        float: left;
+    }
+    .productBracket {
+        width: 10rem;
+
+        .bracketTitle {
+            width: 50px;
+        }
+        .bracketPhoto img {
+            width: 50px !important;
+            height: 50px;
+        }
+
+        .bracketTitle {
+            width: fit-content;
+        }
+
+        .addRemarks {
+            width: 20px;
+        }   
+
+        .bracketPieces {
+            width: 30rem;
+        }
+
+        .bracketAction {
+            width: 50rem;
+        }
+
+        .additionalText {
+            width: 10rem !important;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    background-image: url(https://marketplacer.imgix.net/mA/8HXdbWiqk4uxtjTV3c3yWoO1g.jpg?auto=format&fm=pjpg&fit=max&q=90&itemprop=image&alt=Understanding%20Bike%20Geometry%20Charts%3A%20What%20They%20Mean%20and%20How%20To%20Read%20Them&w=1600&h=1000&s=713edec8944ddb8ad65343c9e5452ae8);
+    height: 100vh;
+    background-size: cover;
+    color: $white-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .welcomeBanner {
+        justify-content: center;
+
+        .enterButton {
+            display: inline-block;
+            border-radius: 4px;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            justify-content: center;
+            }
+
+            .enterButton span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            }
+
+            .enterButton span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            }
+
+            .enterButton:hover span {
+            padding-right: 25px;
+            }
+
+            .enterButton:hover span:after {
+            opacity: 1;
+            right: 0;
+            }
+            
+         }
+}

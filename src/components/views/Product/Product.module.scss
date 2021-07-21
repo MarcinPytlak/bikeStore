@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+// .root {
+// }
+
+.buttonAdd {
+    margin-left: 2rem;
+}
+.productPhoto {
+    width: 50%;
+    height: 50%;
+}
+.productImage {
+    width: 400px;
+    &:hover {
+        width: 55%;
+        height: 55%;
+        transition: $transition;
+        
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.buttonBack {
+    margin-left: 2rem;
+
+    a {
+        color: $color-light-primary ;
+        text-decoration: none;
+        
+    }
+}

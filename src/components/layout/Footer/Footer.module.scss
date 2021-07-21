@@ -1,0 +1,12 @@
+@import '../../../styles/settings.scss';
+
+.root {
+
+    .footer {
+    background-color: $footer-bg;
+    color: $white-primary;
+    text-align: center;
+    height: 2rem;
+    bottom: 0;
+    }
+}

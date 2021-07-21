@@ -1,0 +1,49 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    background-color: $header-topbar-bg;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        line-height: 55px;
+  
+        a {
+          color: $color-light-primary;
+          font-size: 13px;
+          @extend %text-hover-before;
+  
+          &:hover {
+            text-decoration: none;
+            @extend %text-hover-after;
+          }
+        }
+      }
+    }
+  
+    .topOptions ul li {
+      margin-right: 1.5rem;
+  
+      .icon {
+        margin-left: 5px;
+      }
+    }
+  
+    .topMenu ul li {
+      margin-left: 1.5rem;
+  
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px){
+    .topMenu a span {
+      display: none;
+    }
+  }
